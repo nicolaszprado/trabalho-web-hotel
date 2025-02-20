@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraíso - Seu refúgio perfeito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hotel Paraíso</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#rooms">Quartos</a>
+                <a href="#services">Serviços</a>
+                <a href="#location">Localização</a>
+                <a href="#booking" class="booking-btn">Reservar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Bem-vindo ao Hotel Paraíso</h1>
+            <p>Sua experiência única de conforto e luxo</p>
+        </section>
+
+        <section id="rooms" class="rooms">
+            <h2>Nossos Quartos</h2>
+            <div class="room-grid" id="roomsGrid"></div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid" id="servicesGrid"></div>
+        </section>
+
+        <section id="location" class="location">
+            <h2>Nossa Localização</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975829016813!2d-46.6558498!3d-23.5617001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x63b9f435c2c93a7f!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1635959601844!5m2!1spt-BR!2sbr"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2>Faça sua Reserva</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="guestName">Nome Completo</label>
+                    <input type="text" id="guestName" required>
+                </div>
+                <div class="form-group">
+                    <label for="guestEmail">E-mail</label>
+                    <input type="email" id="guestEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="guestPhone">Telefone</label>
+                    <input type="tel" id="guestPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkIn">Data de Entrada</label>
+                    <input type="date" id="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Data de Saída</label>
+                    <input type="date" id="checkOut" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomType">Tipo de Quarto</label>
+                    <select id="roomType" required>
+                        <option value="">Selecione um quarto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Número de Hóspedes</label>
+                    <input type="number" id="guests" min="1" max="4" required>
+                </div>
+                <button type="submit">Reservar Agora</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Paraíso. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
